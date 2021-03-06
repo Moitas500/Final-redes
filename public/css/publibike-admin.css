@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+/******ICONS PUBLIBIKE******/
+
+@font-face {
+  font-family: 'app_publibike';
+  src:  url('../fonts/app_publibike.eot?wbps9m');
+  src:  url('../fonts/app_publibike.eot?wbps9m#iefix') format('embedded-opentype'),
+    url('../fonts/app_publibike.ttf?wbps9m') format('truetype'),
+    url('../fonts/app_publibike.woff?wbps9m') format('woff'),
+    url('../fonts/app_publibike.svg?wbps9m#app_publibike') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app_publibike' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-map:before {
+  content: "\e94b";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-stats-dots:before {
+  content: "\e99b";
+}
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, li, input, button{
+	font-family: 'Roboto', sans-serif !important;
+
+}
+
+body{
+	background-color: #f0efef;
+}
+
+.wrapper{
+	width: calc(100% - 254px);
+}
+
+.menu-side{
+	position: fixed;
+	height: 100%;
+	border-radius: 0 !important;
+	width: 254px !important;
+}
+
+.ui.inverted.menu{
+	background-color: #001434 !important;
+}
+
+.logo-publibike{
+	text-align: center;
+}
+
+.logo-publibike img{
+	max-width: 180px;
+}
+
+.ui.secondary.menu{
+	background-color: #fff;
+	padding: 20px;
+}
+
+.ui.secondary.menu h3{
+	font-size: 30px;
+    margin-bottom: 0;
+    line-height: 100%;
+    color: #1f355d;
+    margin: 10px;
+}
+
+.content{
+	padding: 10px 20px !important;
+	margin-top: 0 !important;
+}
+
+.content .inside-column{
+	background-color: transparent;
+	padding: 20px;
+	margin: 0;
+}
+
+.tabla-publibike thead{
+	background-color: #001434;
+	color: #fff;
+}
+
+.tabla-publibike thead th{
+	color: #fff !important;
+    text-transform: uppercase !important;
+    padding: 10px !important;
+    font-size: 16px;
+}
+
+.tabla-publibike td{
+	padding: 10px !important;
+	font-size: 16px;
+}
+
+.content .inside-column h3{
+	color: #1f355d;
+	font-size: 20px;
+	margin-bottom: 0px;
+    }
+
+.statistics .data-statistics{
+	width: 30%;
+	display: inline-block;
+	padding: 5px 20px;
+	font-size: 16px;
+}
+
+.statistics .graphic-statistics{
+	width: 70%;
+	padding: 5px 20px;
+}
+
+.statistics h3{
+	margin-bottom: 20px !important;
+}
+
+.ui.progress{
+	background-color: transparent;
+}
+
+.content-activity{
+	text-align: center !important;
+}
+
+.content-activity .column{
+	border-bottom: 1px solid #479946;
+}
+
+
+.content-activity > h2{
+	margin-top: 20px;
+	color: #1f355d;
+	display: inline-block;
+    width: 100%;
+}
+
+.content-activity h4{
+	color: #479946;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+.data-activity{
+	text-align: center;
+}
+
+.data-activity h3, .data-activity h5{
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.data-activity h3{
+	font-size: 40px !important;
+}
+
+.data-activity h5{
+	font-size: 20px;
+	font-weight: lighter;
+	color: #b39f40;
+}
+
+.user-data h4{
+	font-size: 18px;
+}
+
+.user-data small{
+	display: block;
+	font-weight: lighter;
+}
+
+.content > .column{
+	padding: 0 !important;
+	margin: 1em;
+	background-color: #fff;
+}
+
+.ui[class*="three column"].grid>.column:not(.row), .ui[class*="three column"].grid>.row>.column{
+	width: calc(33% - 25px);
+}
+
+.ui[class*="two column"].grid>.column:not(.row), .ui[class*="two column"].grid>.row>.column{
+	width: calc(50% - 28px);
+}
+
+.ui.progress{
+	margin: 15px 0;
+}
+
+#rutas .ui.secondary.menu{
+	text-align: center;
+	padding: 0;
+}
+
+#rutas .ui.secondary.menu .item{
+	background-color:  #f0efef;
+	color: #001434;
+}
+
+#rutas .ui.secondary.menu .item.active{
+	background-color:  #001434;
+	color: #f0efef;
+}
+
+.date-rute{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.date-rute h3{
+	font-size: 32px !important;
+	color: #479946 !important;
+}
+
+.column.campaing{
+	background-color: #fff;
+	margin: 5px;
+	padding: 10px;
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #ddd;
+}
+.column.campaing h4{
+	margin: 10px 0px;
+	color: #001434;
+}
+
+.column.campaing h4 small{
+	display: block;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.state-campaing h3:before{
+	content: "• ";
+	font-size: 45px;
+	display: inline-block;
+	margin-right: 11px;
+	vertical-align: middle;
+}
+
+.state-campaing h3{
+	margin: 0;
+	font-size: 12px !important;
+	text-transform: uppercase;
+}
+
+.state-campaing.active, .state-campaing.active h3{
+	color: #4a9a00 !important;
+}
+
+.state-campaing.no-disponible,.state-campaing.no-disponible h3{
+	color: #8e8e8e !important;
+}
+
+.warning-date, .warning-date h3{
+	color: #d72024 !important;
+}
+
+.warning-quotas, .warning-quotas h3{
+	color: #f1a30c !important;
+}
+
+.logo-campaing{
+	text-align: center;
+	width: 100%;
+}
+
+.data-main{
+	text-align: center;
+	padding: 40px;
+	background-color: gray;
+	color: #fff;
+	margin: 5px;
+	width: 47% !important;
+	display: inline-block !important;
+}
+
+.data-main i{
+	font-size: 30px;
+}
+
+.data-main h4{
+	font-weight: lighter;
+	margin: 0;
+	font-size: 16px;
+}
+
+.data-main h2{
+	font-size: 25px;
+	margin: 0;
+}
+
+.degrade-green{
+	background: rgb(0,106,15);
+	background: linear-gradient(90deg, rgba(0,106,15,1) 0%, rgba(141,201,53,1) 100%);
+}
+
+.degrade-orange{
+	background: rgb(254,52,44);
+	background: linear-gradient(90deg, rgba(254,52,44,1) 0%, rgba(253,201,53,1) 100%);
+}
+
+.degrade-blue{
+	background: rgb(1,74,253);
+	background: linear-gradient(90deg, rgba(1,74,253,1) 0%, rgba(16,202,215,1) 100%);
+}
+
+.degrade-violet{
+	background: rgb(164,0,212);
+	background: linear-gradient(90deg, rgba(164,0,212,1) 0%, rgba(106,0,148,1) 100%);
+}
+
+.titulos-campanas{
+	text-align: center;
+}
+
+
+.titulos-campanas h4{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1124px){
+	.column{
+		width: 100% !important;
+	}
+	.column.campaing, .user-data .inside-column .column .column{
+		width: calc(33% - 20px) !important;
+	}
+}
+
+@media screen and (max-width: 875px){
+	.column{
+		padding: 0;
+	}
+	.wrapper{
+		width: 100% !important;
+		-webkit-transform: translate3d(0px,0,0) !important;
+    	transform: translate3d(0px,0,0) !important;
+    	margin-top: 100px;
+	}
+
+	.menu-side{
+		width: 100% !important;
+		max-height: 100px !important;
+		padding: 10px;
+	}
+
+	.menu-side div, .menu-side a{
+		display: inline-block !important;
+	}
+
+	.menu-side a{
+		font-size: 0px;
+	}
+
+	.menu-side a i{
+		font-size: 20px;
+	}
+
+	.menu-side .logo-publibike img{
+		max-width: 90px !important;
+		vertical-align: middle;
+	}
+}

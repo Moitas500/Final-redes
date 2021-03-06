@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+/*****ICONOS EKOBIKE*****/
+
+@font-face {
+  font-family: 'app_ekobike';
+  src:  url('../fonts/app_ekobike.eot?wf75sx');
+  src:  url('../fonts/app_ekobike.eot?wf75sx#iefix') format('embedded-opentype'),
+    url('../fonts/app_ekobike.ttf?wf75sx') format('truetype'),
+    url('../fonts/app_ekobike.woff?wf75sx') format('woff'),
+    url('../fonts/app_ekobike.svg?wf75sx#app_ekobike') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app_ekobike' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-briefcase:before {
+  content: "\e015";
+}
+.icon-wallet:before {
+  content: "\e016";
+}
+.icon-gift:before {
+  content: "\e017";
+}
+.icon-trophy:before {
+  content: "\e023";
+}
+.icon-map:before {
+  content: "\e025";
+}
+.icon-basket:before {
+  content: "\e027";
+}
+.icon-pricetags:before {
+  content: "\e02f";
+}
+.icon-tools-2:before {
+  content: "\e034";
+}
+.icon-linegraph:before {
+  content: "\e039";
+}
+.icon-profile-male:before {
+  content: "\e040";
+}
+.icon-bike:before {
+  content: "\e042";
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, li, input, button{
+	font-family: 'Roboto', sans-serif !important;
+
+}
+
+body{
+	background-color: #f0efef;
+}
+
+.wrapper{
+	width: calc(100% - 254px);
+}
+
+.menu-side{
+	position: fixed;
+	height: 100%;
+	border-radius: 0 !important;
+	width: 254px !important;
+}
+
+.ui.inverted.menu{
+	background-color: #001434 !important;
+}
+
+.logo-ekobike{
+	text-align: center;
+}
+
+.logo-ekobike img{
+	max-width: 180px;
+}
+
+.ui.secondary.menu{
+	background-color: #fff;
+	padding: 20px;
+}
+
+.ui.secondary.menu h3{
+	font-size: 30px;
+    margin-bottom: 0;
+    line-height: 100%;
+    color: #1f355d;
+    margin: 10px;
+}
+
+.content{
+	padding: 10px 20px !important;
+	margin-top: 0 !important;
+}
+
+.content .inside-column{
+	background-color: #fff;
+	padding: 20px;
+	margin: 0;
+}
+
+.tabla-ekobike thead{
+	background-color: #001434;
+	color: #fff;
+}
+
+.tabla-ekobike thead th{
+	color: #fff !important;
+    text-transform: uppercase !important;
+    padding: 10px !important;
+    font-size: 16px;
+}
+
+.tabla-ekobike td{
+	padding: 10px !important;
+	font-size: 16px;
+}
+
+.content .inside-column h3{
+	color: #1f355d;
+	font-size: 18px;
+	margin-bottom: 0px;
+    }
+
+.statistics .data-statistics{
+	width: 30%;
+	display: inline-block;
+	padding: 5px 20px;
+	font-size: 16px;
+}
+
+.statistics .graphic-statistics{
+	width: 70%;
+	padding: 5px 20px;
+}
+
+.statistics h3{
+	margin-bottom: 20px !important;
+}
+
+.ui.progress{
+	background-color: transparent;
+}
+
+.content-activity{
+	text-align: center !important;
+}
+
+.content-activity .column{
+	border-bottom: 1px solid #001434;
+}
+
+
+.content-activity > h2{
+	margin-top: 20px;
+	color: #1f355d;
+	display: inline-block;
+    width: 100%;
+}
+
+.content-activity h4{
+	color: #001434;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+.data-activity{
+	text-align: center;
+}
+
+.data-activity h3, .data-activity h5{
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.data-activity h3{
+	font-size: 40px !important;
+}
+
+.data-activity h5{
+	font-size: 20px;
+	font-weight: lighter;
+	color: #f9b410;
+}
+
+.user-data h4{
+	font-size: 18px;
+}
+
+.user-data small{
+	display: block;
+	font-weight: lighter;
+}
+
+.content > .column{
+	padding: 0 !important;
+	margin: 1em;
+	background-color: #fff;
+}
+
+.ui[class*="three column"].grid>.column:not(.row), .ui[class*="three column"].grid>.row>.column{
+	width: calc(33% - 23px);
+}
+
+.ui[class*="two column"].grid>.column:not(.row), .ui[class*="two column"].grid>.row>.column{
+	width: calc(50% - 28px);
+}
+
+.ui.progress{
+	margin: 15px 0;
+}
+
+#rutas .ui.secondary.menu{
+	text-align: center;
+	padding: 0;
+}
+
+#rutas .ui.secondary.menu .item{
+	background-color:  #f0efef;
+	color: #001434;
+}
+
+#rutas .ui.secondary.menu .item.active{
+	background-color:  #001434;
+	color: #f0efef;
+}
+
+.date-rute{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.date-rute h3{
+	font-size: 32px !important;
+	color: #001434 !important;
+}
+
+.prize-content{
+	text-align: left;
+}
+
+.prize-content ul{
+	list-style: none;
+	padding: 0;
+}
+
+.prize-content ul li {
+    display: inline-block;
+    padding: 20px;
+    color: #001434;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prize-content ul li i{
+	font-size: 45px;
+	color: #f9b410;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.prize-content.another ul li{
+	opacity: .5;
+}
+
+@media screen and (max-width: 1330px){
+	.column{
+		width: 100% !important;
+	}
+	.column.campaing, .user-data .inside-column .column .column{
+		width: calc(33% - 20px) !important;
+	}
+}
+
+@media screen and (max-width: 875px){
+	.column{
+		padding: 0;
+	}
+	.wrapper{
+		width: 100% !important;
+		-webkit-transform: translate3d(0px,0,0) !important;
+    	transform: translate3d(0px,0,0) !important;
+    	margin-top: 100px;
+	}
+
+	.menu-side{
+		width: 100% !important;
+		max-height: 100px !important;
+		padding: 10px;
+	}
+
+	.menu-side div, .menu-side a{
+		display: inline-block !important;
+	}
+
+	.menu-side a{
+		font-size: 0px;
+	}
+
+	.menu-side a i{
+		font-size: 20px;
+	}
+
+	.menu-side .logo-ekobike img{
+		max-width: 90px !important;
+		vertical-align: middle;
+	}
+}

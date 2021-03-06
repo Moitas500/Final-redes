@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Rui Santos - Complete project details at https://RandomNerdTutorials.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software. -->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <style>
+    body {
+      min-width: 310px;
+      max-width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      background-color: #f7e0e0;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    header h2 {
+      font-family: Arial;
+      font-size: 2.5rem;
+      text-align: center;
+      color: black;
+      background-color: white;
+      margin: 0%;
+      padding: 5%;
+    }
+
+    h2 {
+      font-family: Arial;
+      font-size: 2.5rem;
+      text-align: center;
+      background-color: #950D16;
+      margin: 0%;
+      padding: 5%;
+      color: white;
+    }
+
+    .header {
+      position: fixed;
+      width: 100%;
+      height: 15%;
+      background-color: white !important;
+      border-bottom: rgba(192, 32, 23, 1) solid 2px;
+      display: table;
+    }
+
+    .header_logo {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      border: black solid 1px;
+      margin: 0 0 0 2px;
+    }
+
+    .header_logo img {
+      max-height: 100%;
+      min-height: 10%;
+      width: 70%;
+    }
+
+    .header_text {
+      display: table-cell;
+      text-align: left;
+      vertical-align: middle;
+      border: black solid 2px;
+      font-size: 2rem;
+    }
+
+    header {
+      background-color: white;
+    }
+
+    .container {
+      border-radius: 25px !important;
+      border: 2px solid #fdb400;
+      box-shadow: 0px 9px 12px;
+      background: #fff;
+      color: #950D16
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header_logo">
+      <img src="https://www.udistrital.edu.co/themes/custom/versh/images/default/preloader.png">
+    </div>
+    <div class="header_text">
+      <h2>Redes de Comunicación I {{title}}</h2>
+      <h1>
+        Cristhian Camilo Martinez Rey - 20181020021<br>
+        Miguel Pérez Valderrama - 20162020049<br>
+        Andrés López Torres - 20122020031
+      </h1>
+    </div>
+    <div class="header_logo">
+      <img src="https://www.udistrital.edu.co/themes/custom/versh/images/default/preloader.png">
+    </div>
+  </header>
+
+  <h2>ESP Weather Station</h2>
+  <div id="chart-temperature" class="container"></div>
+  <div id="chart-humidity" class="container"></div>
+  <footer>
+
+  </footer>
+
+</body>
+<script>
+  var xhttp = new XMLHttpRequest();
+  var data = [];
+  xhttp.onreadystatechange = function () {
+    data = JSON.parse(this.responseText)
+  }
+  xhttp.open("GET", "https://geoapps.esri.co/FinalRedes/api/data/sensor", false);
+  xhttp.send();
+  console.log("Data", data)
+  const tam = data.length;
+  console.log("tam",tam)
+  var counter = data.length;
+  var chartT = new Highcharts.Chart({
+    chart: { renderTo: 'chart-temperature' },
+    title: { text: 'DHT11 Temperatura', color: '#950D16' },
+    series: [{
+      showInLegend: false,
+      data: []
+    }],
+    plotOptions: {
+      line: {
+        animation: false,
+        dataLabels: { enabled: true }
+      },
+      series: { color: '#059e8a' }
+    },
+    xAxis: {
+      type: 'datetime',
+      dateTimeLabelFormats: { second: '%H:%M:%S' }
+    },
+    yAxis: {
+      title: { text: 'Temperature (Celsius)' }
+      //title: { text: 'Temperature (Fahrenheit)' }
+    },
+    credits: { enabled: false }
+  });
+   var chartH = new Highcharts.Chart({
+    chart: { renderTo: 'chart-humidity' },
+    title: { text: 'DHT11 Humedad ' },
+    series: [{
+      showInLegend: false,
+      data: []
+    }],
+    plotOptions: {
+      line: {
+        animation: false,
+        dataLabels: { enabled: true }
+      }
+    },
+    xAxis: {
+      type: 'datetime',
+      dateTimeLabelFormats: { second: '%H:%M:%S' }
+    },
+    yAxis: {
+      title: { text: 'Humidity (%)' }
+    },
+    credits: { enabled: false }
+  });
+
+  setInterval(function () {
+    if (counter == 0)
+      clearInterval(id);
+    else {
+      counter = counter - 1;
+      console.log(counter)
+      let datas = data[tam-counter]
+      console.log(datas)
+      var x = datas.date,
+          yt = parseFloat(datas.temperatura),
+          yh = parseFloat(datas.humedad);
+        //console.log(this.responseText);
+        if (chartT.series[0].data.length > 40) {
+          chartT.series[0].addPoint([x, yt], true, true, true);
+        } else {
+          chartT.series[0].addPoint([x, yt], true, false, true);
+        }
+        if (chartH.series[0].data.length > 40) {
+          chartH.series[0].addPoint([x, yh], true, true, true);
+        } else {
+          chartH.series[0].addPoint([x, yh], true, false, true);
+        }
+    }
+  }, 3000);
+
+</script>
+
+</html>

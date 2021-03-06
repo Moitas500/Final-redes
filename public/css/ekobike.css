@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+
+/*****ICONOS EKOBIKE*****/
+
+@font-face {
+  font-family: 'app_ekobike';
+  src:  url('../fonts/app_ekobike.eot?wf75sx');
+  src:  url('../fonts/app_ekobike.eot?wf75sx#iefix') format('embedded-opentype'),
+    url('../fonts/app_ekobike.ttf?wf75sx') format('truetype'),
+    url('../fonts/app_ekobike.woff?wf75sx') format('woff'),
+    url('../fonts/app_ekobike.svg?wf75sx#app_ekobike') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app_ekobike' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-briefcase:before {
+  content: "\e015";
+}
+.icon-wallet:before {
+  content: "\e016";
+}
+.icon-gift:before {
+  content: "\e017";
+}
+.icon-trophy:before {
+  content: "\e023";
+}
+.icon-map:before {
+  content: "\e025";
+}
+.icon-basket:before {
+  content: "\e027";
+}
+.icon-pricetags:before {
+  content: "\e02f";
+}
+.icon-tools-2:before {
+  content: "\e034";
+}
+.icon-linegraph:before {
+  content: "\e039";
+}
+.icon-profile-male:before {
+  content: "\e040";
+}
+.icon-bike:before {
+  content: "\e042";
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, input, button{
+	font-family: 'Quicksand', sans-serif !important;
+
+}
+
+body{
+	background: url(../img/background-ekobike.jpg) no-repeat;
+	background-size: cover !important;
+	background-attachment: fixed;
+	background-color: #fff;
+	padding: 0 20px;
+	height: auto;
+}
+
+body.login{
+	background: url(../img/dark-background-uflou-07.jpg) no-repeat;
+	height: 100vh;
+}
+
+img{
+	width: 100%;
+}
+
+.biker{
+	max-width: 100%;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: -5px;
+}
+
+.footer-main{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	background-repeat: repeat-x;
+	background-size: 100%;
+	background-position: bottom center;
+}
+
+
+.footer-main hr{
+	width: 100%;
+	border-color: #01D9AD;
+	margin-top: -10px;
+}
+
+.logo-ekobike, .logo-ekobike-in{
+	text-align: center;
+	position: relative;
+	top: 10px;
+}
+
+.logo-ekobike img{
+	max-width: 200px;
+}
+
+.logo-ekobike-in img{
+	max-width: 100px;
+}
+
+.form-login{
+	position: relative;
+	text-align: center;
+	max-width: 767px;
+	margin: 40px auto;
+	padding: 0 40px;
+}
+
+.form-login .field, .form-login .button{
+	margin: 10px 0 !important;
+}
+
+.form-login input[type=text]{
+	padding: 12px 20px !important;
+	border-radius: 50px !important;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.form-login input[type=text]::placeholder{
+	color: #001434;
+	text-align: center;
+	font-size: 20px;
+}
+
+.form-login .ui.button{
+	background: rgb(0,179,216);
+	background: linear-gradient(90deg, rgba(0,179,216,1) 0%, rgba(1,217,173,1) 100%);
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+
+
+.main-wrapper{
+	max-width: 640px;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+.inside-app{
+	padding-bottom: 80px; 
+}
+
+/***** profile ****/
+
+.content-profile ul{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+.content-profile ul li{
+	width: 32%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content-profile ul li hr{
+	border-color: #01D9AD;
+}
+
+.content-profile .content-photo{
+	border: 1px solid #01D9AD;
+	border-radius: 100%;
+	padding: 0;
+	align-items:; 
+}
+
+.content-profile .content-photo img{
+	display: block;
+}
+
+.menu-ekobike{
+	background: rgb(0,179,216);
+	background: linear-gradient(90deg, rgba(0,179,216,1) 0%, rgba(1,217,173,1) 100%);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.menu-ekobike ul{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+.menu-ekobike ul{
+	margin: 0;
+}
+
+.menu-ekobike ul li{
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.menu-ekobike ul li:nth-child(3) a{
+	padding: 2px;
+}
+
+.menu-ekobike ul li:nth-child(3) img{
+	max-width: 50px;
+}
+
+i.icon.play.circle:before{
+	display: inline-block;
+}
+
+.menu-ekobike i{
+	color: #fff;
+	font-size: 30px;
+}
+
+.menu-ekobike a {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+.info-profile{
+	text-align: center;
+}
+
+.info-profile h2{
+	color: #01D9AD;
+	margin: 0 0 5px 0;
+}
+
+.info-profile h4{
+	color: #606060;
+	margin: 0;
+	margin: 0 0 5px 0;
+	font-size: 16px;
+}
+
+.data-profile, .content-activity{
+	padding-top: 40px !important;
+	padding-bottom: 60px !important;
+}
+
+.data-profile h4, .content-activity h4{
+	font-weight: regular;
+	text-align: left;
+	color: #01D9AD;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.data-profile input{
+	background-color: transparent !important;
+	border: 0;
+	border-bottom: 1px solid #01D9AD !important;
+	padding: 10px 0 !important;
+	color: #606060 !important;
+}
+
+.data-profile .ui.form .field :disabled{
+	opacity: 1;
+}
+
+.data-profile input::placeholder{
+	color: #606060 !important;
+	font-size: 16px;
+}
+
+.btn-yellow{
+	background: #020202 !important;
+	color: #01D9AD !important;
+	font-size: 16px;
+}
+
+.prize-profile h4{
+	color: #01D9AD;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.prize-content{
+	text-align: left;
+}
+
+.prize-content ul{
+	list-style: none;
+	padding: 0;
+}
+
+.prize-content ul li {
+    width: 49%;
+    display: inline-block;
+    padding: 10px;
+    color: #606060;
+    font-size: 16px;
+}
+
+.prize-content ul li i{
+	font-size: 45px;
+	color: #01D9AD;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.prize-content.another h3{
+	text-align: left;
+	color: #606060;
+	vertical-align: middle;
+}
+
+.prize-content.another h3 small{
+	vertical-align: middle;
+}
+
+.prize-content.another h3 small a{
+	color: #01D9AD;
+	font-size: 16px;
+	display: block;
+}
+
+.prize-content.another ul li{
+	opacity: .5;
+}
+
+.content-activity {
+	width: 100%;
+	margin: 0 !important;
+}
+
+.content-activity .column:first-child{
+	border-right: 1px solid #01D9AD;
+	border-bottom: 1px solid #01D9AD;
+}
+
+.content-activity .column:nth-child(2){
+	border-bottom: 1px solid #01D9AD;
+}
+
+.content-activity .column:nth-child(3){
+	border-right: 1px solid #01D9AD;
+}
+
+
+.data-activity{
+	text-align: right;
+}
+
+.data-activity h3, .data-activity h5{
+	color: #606060;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.data-activity h3{
+	font-size: 40px;
+}
+
+.data-activity h5{
+	font-size: 20px;
+	font-weight: lighter;
+	color: #01D9AD;
+}
+
+.button-start{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.button-start a{
+	color: #606060;
+}
+
+.button-start img{
+	max-width: 40px;
+	vertical-align: middle;
+}
+
+.main-wrapper .ui.segment{
+	background-color: transparent;
+	border: none;
+}
+
+.title-section{
+	color: #606060;
+	text-align: center;
+}
+
+.title-section:after{
+	content: " ";
+	width: 20px;
+	height: 2px;
+	background-color: #01D9AD;
+}
+
+.title-section i{
+	margin-right: 10px;
+}
+
+.historic{
+	margin-top: 20px !important;
+}
+
+.historic h4{
+	color: #606060;
+	font-size: 16px;
+}
+.ui.celled.grid>.column:not(.row), .ui.celled.grid>.row>.column {
+    -webkit-box-shadow: -1px 0 0 0 #01D9AD;
+    box-shadow: -1px 0 0 0 #01D9AD;
+}
+
+.ui.celled.grid>.row{
+	-webkit-box-shadow: 0 -1px 0 0 #01D9AD;
+    box-shadow: 0 -1px 0 0 #01D9AD;
+
+}
+
+.date-historic label{
+	color: #606060 !important;
+	font-size: 16px !important;
+}
+
+.date-historic{
+	text-align: center;
+}
+
+.date-historic .field{
+	width: 49% !important;
+	display: inline-block;
+}
+
+.date-historic .field input{
+	background-color: transparent !important;
+	padding: 10px !important;
+	font-size: 20px !important;
+}
+
+.date-historic .field input::placeholder{
+	color: #606060 !important;
+	font-weight: bold;
+}
+
+.content-map{
+	background: #fff;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.6); 
+	box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.6);
+	margin-top: 30px;
+}
+
+.content-play{
+	padding: 20px;
+}
+
+.content-play .column{
+	text-align: center;
+}
+
+.content-play .button-play{
+	margin-top: 20px;
+	padding-left: 27px !important;
+}
+
+.button-play i{
+	color: #b30a3c;
+	font-size: 60px;
+}
+
+.content-play .distance h5{
+	color: #001434;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.content-play .distance h3{
+	color: #1f355d;
+	margin: 0;
+	display: inline-block;
+	font-size: 40px;
+	vertical-align: middle;
+}
+
+.content-play .distance h4{
+	display: inline-block;
+	font-size: 20px;
+	color: #001434;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.chrono{
+	text-align: center;
+	padding: 20px;
+}
+
+.chrono h2{
+	color:  #1f355d;
+}
+
+.chrono h5{
+	color: #001434;
+}
+
+.chrono h2, .chrono h5{
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.chrono h4{
+	font-size: 16px;
+	color: #001434;
+	margin: 0;
+}
+
+.chrono .time-elapsed h2{
+	font-size: 40px;
+}
+
+.chrono .time-elapsed, .calories-co2{
+	border-bottom: 1px solid #606060;
+	padding: 10px 0;
+}
+
+.max-speed{
+	padding: 10px 0;
+}
+
+.calories-co2 div{
+	width: 49%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.calories-co2 div:first-child{
+	border-right: 1px solid #606060;
+}
+
+.styleDate{
+	color: #606060 !important; 
+	font-weight: 600 !important;
+}
+
+#alertUser{
+	color: red;
+	text-align: center;
+}
+
+.data-profile.ui[class*="two column"].grid>.column:not(.row), .data-profile.ui[class*="two column"].grid>.row>.column{
+	width: 100% !important;
+}
+
+/**bar progress**/
+
+.ui.violet.progress .bar{
+	background: rgb(0,179,216);
+	background: linear-gradient(90deg, rgba(0,179,216,1) 0%, rgba(1,217,173,1) 100%);
+}
+.ui.yellow.progress .bar{
+background: rgb(10,222,234);
+background: linear-gradient(90deg, rgba(10,222,234,1) 0%, rgba(1,233,173,1) 100%);
+}
+.ui.orange.progress .bar{
+background: rgb(1,233,173);
+background: linear-gradient(90deg, rgba(1,233,173,1) 0%, rgba(10,222,234,1) 100%);
+}
+
+.ui.blue.progress .bar{
+background: #00B3D8;
+}
+
+.ui.white.progress .bar{
+background: #04BA8E;
+}
